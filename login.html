@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login and Sign Up</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+    <div class="form">
+      <form id="loginForm" action="#Signup">
+        <label for="chk" aria-hidden="true">Sign Up</label>
+        <input type="text" name="txt" placeholder="User name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="Password" name="pswd" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <div class="login" >
+        <form  id="Signup" action="index.html">
+            <label for="chk" aria-hidden="true">Login</label>
+          <input type="email" name="email" placeholder="Email" required>
+             <input type="password" name="password" placeholder="Password" required>
+           <button type="submit">Login</button>
+      </form>
+    </div>
+    </div>
+    
+      
+<style>
+ body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    
+    font-family: 'Jost', sans-serif;
+    background-image: url(login1.jpg);
+   background-size: 100% 540px;
+   
+    
+   
+    
+}
+.main
+{
+    width: 350px;
+    height: 500px;
+     background: rgb(198, 108, 108);
+     overflow: hidden;
+     background: url("3.jpg") no-repeat center/cover;
+     border-radius: 10px;
+     box-shadow: 5px,20px,50px,#f00;
+
+}
+#chk{
+    display: none;
+}
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+label{
+    color: peachpuff;
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out  ;
+
+}
+ input{
+    width: 60%;
+    height: 20px ;
+    background: #FFFFFF;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px ridge #f00;
+    outline: 1px ridge white;
+    border-radius: 5px;
+ }
+ button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #FFFFFF ;
+    background:  linear-gradient(120deg,#EE9CA7 0%, #FFDDE1 100%);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2% ease-in;
+    cursor: pointer;
+ }
+ button:hover{
+    background:  #648db5; 
+ }
+ .login{
+    height: 460px;
+    font-size: 22px;
+    background:   linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+    
+ }
+ .login label{
+    color: #FFFFFF;
+    font-size: larger;
+    transform: scale(.6);
+ }
+ #chk:checked ~ .login{
+    transform: translateY(-500px);
+ }
+ #chk:checked ~ .login label{
+    transform: scale(1);
+ }
+ #chk:checked ~ .form label{
+    transform: scale(.6);
+ }
+</style>
+  <script >
+    // Login form submission
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form from submitting
+
+  // Get form values
+  var email = document.getElementById("loginForm").elements["email"].value;
+  var password = document.getElementById("loginForm").elements["password"].value;
+
+  // You can add your own login logic here
+  // For demonstration purposes, let's redirect to a success page
+  if (email === "user@example.com" && password === "password") {
+    window.location.href = "success.html";
+  }
+});
+
+// Sign up form submission
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form from submitting
+
+  // Get form values
+  var username = document.getElementById("signupForm").elements["username"].value;
+  var email = document.getElementById("signupForm").elements["email"].value;
+  var password = document.getElementById("signupForm").elements["password"].value;
+
+  // You can add your own sign up logic here
+  // For demonstration purposes, let's redirect
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,2742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive fitness and gym website design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+        
+
+</head>
+<body>
+    
+<!-- header section starts      -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <span>GET</span>FIT </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        
+        <a href="#quest">question</a>
+        <a href="#features">features</a>
+        <a href="#pricing">diet</a>
+        <a href="#BMI Calculator">Calculator</a>
+        <a href="#calorie">Calories Burned</a>
+        <a href="#schedule">schedule</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+</header>
+
+<!-- header section ends     -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(hom.jpg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>Make yourself stronger than your excuses.</h3>
+                    <a href="#quest" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>Don't wish for a good body, work for it.</h3>
+                    <a href="#quest" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(home4.jpg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>The only way to get started is to quit talking and begin doing</h3>
+                    <a href="#quest" class="btn">get started</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+  
+
+    <div class="image">
+        <img src="abou.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <span>about us</span>
+        <h3 class="title">Every day is a chance to become better</h3>
+        <p>Welcome to our fitness app! We are dedicated to helping you achieve your health and fitness goals in a convenient and accessible way. With our user-friendly interface and a wide range of features, we aim to make fitness a seamless part of your daily routine. our website offers workout plans, nutrition guidance, and tracking tools to keep you motivated and on track. Stay connected with us, share your progress. Embrace a healthier lifestyle and let our website be your ultimate fitness companion. 
+        </p>
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-check"></i>body and mind</h3>
+                <p>Balancing body and mind for a healthier, happier you</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>healthy life</h3>
+                <p>Embrace a healthy life with website for lasting well-being.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>strategies</h3>
+                <p>Discover effective strategies for optimal fitness,wellness with our website.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>workout</h3>
+                <p>Get ready to sweat and see results with our dynamic workouts.</p>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!--question starts-->
+<section class="quest" id="quest">
+<h1 class="heading"> <span>Questionnaire</span> </h1>
+ <div class="container1">
+  <h1>Fitness Questionnaire</h1>
+
+  <form onsubmit="submitForm(event)">
+    <div class="question current-question">
+      <p>What is your fitness goal?</p>
+      <label>
+        <input type="radio" name="goal" value="weight_loss">
+        Weight Loss
+      </label>
+      <label>
+        <input type="radio" name="goal" value="muscle_gain">
+        Muscle Gain
+      </label>
+      <label>
+        <input type="radio" name="goal" value="general_fitness">
+        General Fitness
+      </label>
+      <label>
+        <input type="radio" name="goal" value="improve_endurance">
+        Improve Endurance
+      </label>
+      <button type="button" onclick="slideToNextQuestion()">Next</button>
+    </div>
+    
+
+   
+
+
+
+    <div class="question">
+      <p>What is your fitness experience level?</p>
+      <label>
+        <input type="radio" name="experience" value="beginner">
+        Beginner
+      </label>
+      <label>
+        <input type="radio" name="experience" value="intermediate">
+        Intermediate
+      </label>
+      <label>
+        <input type="radio" name="experience" value="advanced">
+        Advanced
+      </label>
+      <button type="button" onclick="slideToNextQuestion()">Next</button>
+    </div>
+    <div class="question">
+      <p>What is your age group?</p>
+      <label>
+        <input type="radio" name="age_group" value="18-25">
+        18-25 years
+      </label>
+      <label>
+        <input type="radio" name="age_group" value="26-35">
+        26-35 years
+      </label>
+      <label>
+        <input type="radio" name="age_group" value="36-45">
+        36-45 years
+      </label>
+      <label>
+        <input type="radio" name="age_group" value="46-55">
+        46-55 years
+      </label>
+      <label>
+        <input type="radio" name="age_group" value="56+">
+        56+ years
+      </label>
+      
+      <button type="button" onclick="slideToNextQuestion()">Next</button>
+    </div>
+
+   
+
+    
+
+    <div class="question">
+      <p>How many days per week do you currently exercise?</p>
+      <label>
+        <input type="radio" name="exercise_days" value="0">
+        None
+      </label>
+      <label>
+        <input type="radio" name="exercise_days" value="1-2">
+        1-2 days
+      </label>
+      <label>
+        <input type="radio" name="exercise_days" value="3-4">
+        3-4 days
+      </label>
+      <label>
+        <input type="radio" name="exercise_days" value="5+">
+        5+ days
+      </label>
+      <button type="button" onclick="slideToNextQuestion()">Next</button>
+    </div>
+
+    <div class="question">
+      <p>What type of exercise do you enjoy the most?</p>
+      <label>
+        <input type="radio" name="exercise_type" value="cardio">
+        Cardiovascular (e.g., running, cycling)
+      </label>
+      <label>
+        <input type="radio" name="exercise_type" value="strength">
+        Strength training (e.g., weightlifting, resistance exercises)
+      </label>
+      <label>
+        <input type="radio" name="exercise_type" value="flexibility">
+        Flexibility exercises (e.g., yoga, stretching)
+      </label>
+      <label>
+        <input type="radio" name="exercise_type" value="group">
+        Group classes (e.g., Zumba, dance, aerobics)
+      </label>
+      <button type="button" onclick="slideToNextQuestion()">Next</button>
+    </div>
+
+    <div class="question">
+      <p>Do you have any specific dietary restrictions?</p>
+      <label>
+        <input type="radio" name="dietary_restrictions" value="none">
+        None
+      </label>
+      <label>
+        <input type="radio" name="dietary_restrictions" value="vegetarian">
+        Vegetarian
+      </label>
+      <label>
+        <input type="radio" name="dietary_restrictions" value="vegan">
+        Vegan
+      </label>
+      <label>
+        <input type="radio" name="dietary_restrictions" value="gluten_free">
+        Gluten-Free
+      </label>
+      <button type="button" onclick="slideToNextQuestion()">Next</button>
+    </div>
+
+    <div class="question">
+      <p>How would you rate your stress level?</p>
+      <label>
+        <input type="radio" name="stress_level" value="low">
+        Low
+      </label>
+      <label>
+        <input type="radio" name="stress_level" value="moderate">
+        Moderate
+      </label>
+      <label>
+        <input type="radio" name="stress_level" value="high">
+        High
+      </label>
+      <label>
+        <input type="radio" name="stress_level" value="very_high">
+        Very High
+      </label>
+      <button type="button" onclick="slideToNextQuestion()">Next</button>
+      <input type="submit" value="Submit">
+    </div>
+
+    
+  </form>
+
+  <div id="result"></div>
+</div>
+
+   
+   
+     
+  </form>
+ 
+
+  <div id="result"></div>
+</div>
+<style>
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  }
+  #question body {
+      font-family: 'Poppins', sans-serif;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .question {
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .current-question {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      margin-top: 45px;
+    }
+
+    .container1 {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      justify-content: center;
+    }
+
+    h1 {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .question p {
+      margin-bottom: 30px;
+      background-color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: large;
+      color: red;
+      justify-content: center;
+      text-align: center;
+      
+
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+      font-family: 'Poppins', sans-serif;
+      font-size: medium;
+
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    
+    
+    #result {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-size: medium;
+    }
+    .submit-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      background-color: #4CAF50;
+
+    }
+
+</style>
+
+
+<script>
+  var currentQuestionIndex = 0;
+  var questions = document.querySelectorAll('.question');
+
+  function slideToNextQuestion() {
+    questions[currentQuestionIndex].classList.remove('current-question');
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+      questions[currentQuestionIndex].classList.add('current-question');
+    }
+  }
+
+  function submitForm(event) {
+    event.preventDefault();
+
+    var selectedGoal = document.querySelector('input[name="goal"]:checked');
+    var selectedExperience = document.querySelector('input[name="experience"]:checked');
+
+    if (selectedGoal && selectedExperience) {
+      var resultDiv = document.getElementById("result");
+      resultDiv.style.display = "block";
+
+      var goal = selectedGoal.value;
+      var experience = selectedExperience.value;
+      var message = getRecommendation(goal, experience);
+
+      resultDiv.textContent = message;
+    }
+  }
+
+  function getRecommendation(goal, experience,age_group) {
+    var recommendations = {
+      weight_loss: {
+        beginner: "For weight loss, focus on a combination of cardio exercises and a calorie deficit diet.",
+        intermediate: "Continue with cardio exercises and consider adding strength training to your routine for weight loss and weight loss diet.",
+        advanced: "Incorporate high-intensity interval training (HIIT) and strength training to maximize weight loss."
+
+      },
+      muscle_gain: {
+        beginner: "For muscle gain, focus on compound exercises like squats, deadlifts, and bench presses.",
+        intermediate: "Continue with compound exercises and progressively overload your muscles for muscle growth.",
+        advanced: "Incorporate advanced training techniques like supersets and drop sets to challenge your muscles."
+      },
+      general_fitness: {
+        beginner: "For general fitness, start with a combination of cardiovascular exercises and basic strength training.",
+        intermediate: "Continue with a balanced routine including cardio, strength training, and flexibility exercises.",
+        advanced: "Explore different fitness disciplines and consider incorporating cross-training for overall fitness."
+      },
+      improve_endurance: {
+        beginner: "For improving endurance, start with low-intensity cardio exercises and gradually increase the duration.",
+        intermediate: "Incorporate moderate-intensity cardio activities like running, swimming, or cycling for endurance improvement.",
+        advanced: "Consider high-intensity interval training (HIIT) and endurance-specific training methods to further enhance your endurance."
+      }
+    };
+
+    return recommendations[goal][experience] || "Invalid selection.";
+  }
+</script>
+</section>
+
+<!--question edns-->
+
+
+
+
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+  <h1 class="heading"> <span>gym features</span> </h1>
+<div class="box1">
+  <div class="card1">
+    <div class ="info1">
+      <div class="name1">YOGA</div>
+       
+          
+           <div class="bio1">
+            <p>
+              <i class="fas fa-check"></i>Mindful movement, flexibility, strength, and inner peace combined.</p>
+            <p><i class="fas fa-check"></i>Fitness, relaxation, flexibility, mindfulness, stress-relief.</p>
+            <p><i class="fas fa-check"></i>Pregnant women, those with certain injuries or medical conditions.</p>
+          </p>
+   
+       </div>
+      
+   </div>
+  <div class="photo1" style=" background-image: url(yoga.jpg);"></div>
+ 
+  <a href="https://youtu.be/dAqQqmaI9vY">Watch now</a>
+  </div>
+
+
+  
+    <div class="card1">
+      <div class ="info1">
+        <div class="name1">WEIGHT LOSS </div>
+         <div class="prof1">desi</div>
+            
+             <div class="bio1">
+         <p><i class="fas fa-check"></i>Improved health, increased energy, enhanced confidence, and enhanced overall well-being.</p>
+         <p><i class="fas fa-check"></i>Pregnant women, individuals with certain medical conditions, and underweight individuals should avoid doing.         </p>
+     
+         </div>
+     </div>
+    <div class="photo2" style=" background-image: url(WEIGHT\ LOSS.jpg);"></div>
+   
+    <a href="https://youtu.be/LhL5SNZfnQs">Watch now</a>
+</div>
+
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">ABS EXERCISE</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+     <P><i class="fas fa-check"></i>Stronger core, improved posture, enhanced stability, better athletic performance, toned abs.</P>
+     <P><i class="fas fa-check"></i>Individuals with certain medical conditions affecting the abdominal region, such as hernias or diastasis recti.</P>
+ 
+     </div>
+    
+ </div>
+<div class="photo3" style=" background-image: url(AB\ EXERCISE.jpg);"></div>
+
+<a href="https://youtu.be/Dl8N_8UtWUU">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">AREOBICS</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+     <P><i class="fas fa-check"></i>Reduced risk of chronic diseases and improved overall quality of life.</P>
+     <P><i class="fas fa-check"></i>Pregnant women, individuals with certain medical conditions, and severe injuries</P>
+ 
+     </div>
+    
+ </div>
+<div class="photo4" style=" background-image: url(AEROBICS.jpg);"></div>
+
+<a href="https://youtu.be/WTUruNwUMFI">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">FAT BURNING </div>
+     <div class="prof1">EXERCISE</div>
+        
+         <div class="bio1">
+     <P><i class="fas fa-check"></i>Weight loss, increased metabolism,improved body composition,enhanced energy levels.</P>
+     <P><i class="fas fa-check"></i>Individuals with certain medical conditions, injuries, or pregnancy complications.</P>
+ 
+     </div>
+     
+    <button>Contact me</button>
+ </div>
+<div class="photo5" style=" background-image: url(FAT\ BURNING\ EXERCISE.jpg);"></div>
+
+<a href="https://youtu.be/W4eKVKwf3rQ">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">DANCE</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+     <P><i class="fas fa-check"></i>Improved coordination, flexibility, balance, self-expression, creativity, stress relief, and social interaction.</P>
+     <P><i class="fas fa-check"></i>Individuals with certain medical conditions or injuries should consult professionals.</P>
+ 
+     </div>
+    <button>Contact me</button>
+ </div>
+<div class="photo6" style=" background-image: url(DANCE\ \(2\).jpg);"></div>
+
+<a href="https://youtu.be/lirC5q53DRE">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">STRETCHING</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+     <P><i class="fas fa-check"></i>Flexibility, injury prevention, improved posture, muscle relaxation, enhanced athletic performance</P>
+     <P><i class="fas fa-check"></i>Increased risk of muscle strains, limited range of motion, decreased flexibility.</P>
+ 
+     </div>
+ </div>
+<div class="photo7" style=" background-image: url(STRETCHING\ EXERCISE.jpg);"></div>
+
+<a href="https://youtu.be/2773Z9lHNLo">Watch now</a>
+</div>
+ <div class="card1">
+  <div class ="info1">
+    <div class="name1">CHILDREN </div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+     <P><i class="fas fa-check"></i>Boosted immune system and reduced risk of illness.</P>
+     <P><i class="fas fa-check"></i>Improved mood and mental health.</P>
+      <P><i class="fas fa-check"></i>Enhanced concentration and attention span.</P>
+        <P><i class="fas fa-check"></i>Increased energy levels and vitality.</P>
+        
+ 
+     </div>
+ </div>
+<div class="photo8" style=" background-image: url(CHILDRENSS\ EXERCISE.jpg);"></div>
+
+<a href="https://youtu.be/WpIFlh5whcs">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">DIABETIC </div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+          <p>
+            <i class="fas fa-check"></i>Mindful movement, flexibility, strength, and inner peace combined.</p>
+          <p><i class="fas fa-check"></i>Fitness, relaxation, flexibility, mindfulness, stress-relief.</p>
+          <p><i class="fas fa-check"></i>Pregnant women, those with certain injuries or medical conditions.</p>
+        </p>
+ 
+ 
+     </div>
+     </div>
+<div class="photo9" style=" background-image: url(DIABETIC.jpg);"></div>
+
+<a href="https://youtu.be/-uK8a80vyeI">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">ABDOMINAL</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+          <p>
+            <i class="fas fa-check"></i>Stability, improved posture, enhanced athletic performance, reduced back pain.</p>
+          <p><i class="fas fa-check"></i>Pregnant women, certain injuries,severe back or spinal issues, recent abdominal surgeries,uncontrolled high bp should avoid doing.</p>
+        </p>
+ 
+     </div>
+ </div>
+<div class="photo10" style=" background-image: url(ABDOMINAL\ EXERCISE.jpg);"></div>
+
+<a href="https://youtu.be/E3cfWpsWzZM">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">CARDIO </div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+          <p>
+            <i class="fas fa-check"></i>Improved cardiovascular health and endurance,Enhanced lung function and oxygen circulation,Better sleep quality,</p>
+         
+          <p><i class="fas fa-check"></i>Pregnant women,heart conditions or cardiovascular diseases, low blood sugar levels.</p>
+        </p>
+  
+     </div>
+ </div>
+<div class="photo11" style=" background-image: url(CARDIO\ STRENGTHING.jpg);"></div>
+
+<a href="https://youtu.be/cZyHgKtK75A">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">FULL BODY</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+          <p>
+            <i class="fas fa-check"></i>Increased calorie burning, muscle development,weight management,increasing  fat burning.</p>
+          
+          <p><i class="fas fa-check"></i>Pregnant women, those with certain injuries or medical conditions.</p>
+        </p>
+  
+     </div>
+ </div>
+<div class="photo12" style=" background-image: url(FULL\ BODY\ WORKOUT\ \(2\).jpg);"></div>
+
+<a href="https://youtu.be/AzV3EA-1-yM">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">SENIORS</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+          <p>
+            <i class="fas fa-check"></i>Improved strength,Enhanced flexible,Increased cardiovascular health, Enhanced balance and stability,Reduced risk of falls</p>
+          
+          <p><i class="fas fa-check"></i>Individuals with uncontrolled high BP,heart,illnesses,infections,unhealed fractures,injuries</p>
+        
+  
+     </div>
+ </div>
+<div class="photo13" style=" background-image: url(SENIOR\ CITIZEN\ EXERCISE.jpg);"></div>
+
+<a href="https://youtu.be/dB1x5hHZ_vg">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">PREGNANCY</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+          <p>
+            <i class="fas fa-check"></i>Improved maternal fitness, reduced pregnancy discomfort, and easier labor.</p>
+          
+          <p><i class="fas fa-check"></i>Pregnant women with certain medical complications, high-risk pregnancies, and those under specific medical guidance </p>
+
+
+
+
+         
+     </div>
+ </div>
+<div class="photo14" style=" background-image: url(PREGNANCY\ WORKOUT.jpg);"></div>
+
+<a href="https://youtu.be/YWt3qH-glTw">Watch now</a>
+</div>
+<div class="card1">
+  <div class ="info1">
+    <div class="name1">ZUMBA</div>
+     <div class="prof1">desi</div>
+        
+         <div class="bio1">
+          <p>
+            <i class="fas fa-check"></i>Zumba exercise provides a fun,improves cardiovascular fitness, boosts mood, enhances coordination, and weight loss.</p>
+         
+          <p><i class="fas fa-check"></i>Individuals with severe musculoskeletal,uncontrolled cardiovascular,BP,recent surgeries, pregnant women.</p>
+        </p>
+  
+     </div>
+     
+  
+ </div>
+<div class="photo15" style=" background-image: url(ZUMBA.jpg);"></div>
+
+<a href="https://youtu.be/MwHtUKyLrac">Watch now</a>
+</div>
+
+<style>
+  .features body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color: #fff;
+    justify-content: auto;
+    align-items: LEFT;
+    
+}
+.features .box1{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+   margin: auto;
+
+}
+.card1{
+    height: 450px;
+    width: 310px;
+    background-color : white;
+    transform: scale(0.7);
+    border-radius: 8px;
+    box-shadow:  0px 5px 10px 1px rgba(0,255,255,0.7);  
+    margin: 10px;
+}
+
+@media (max-width: 500px){
+   .box1{
+        flex-direction: row;
+    }
+}
+ .info1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+
+}
+.name1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #f79f08;
+    position: absolute;
+    top: 100px;
+    letter-spacing: 2px;
+}
+.bio1 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+      .bio1 {
+     text-align: left;
+      padding: 1rem;
+     }
+      .bio1 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+
+.bio1{
+    position: absolute;
+    top: 150px;
+    color: black;
+    line-height: 25px;
+    font-size: LARGE;
+    text-align: center;
+}
+ .features button{
+    position: absolute;
+    bottom: 30px;
+    background-color: #f00;
+    border: none;
+    font-size: 20px;
+    padding: 13px 25px;
+    cursor: pointer;
+    color: #fff;
+
+}
+.card1 button:hover{
+    background-color: #fabe58;
+}
+ .photo1{
+    height: 100%;
+    width: 100%;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo1{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.features a{
+    position: absolute;
+    box-shadow: -70px;
+    font-size: x-large;
+    letter-spacing: 5%;
+    line-height: 1.2rem;
+    color: #fff;
+    background-color: #f00;
+    width: 100%;
+    padding: 12px 0;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+
+}
+.photo2{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo2{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo3{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo3{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo4{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo4{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo5{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo5{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo6{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo6{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo7{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo7{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo8{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo8{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo9{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo9{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo10{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo10{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+.photo11{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo11{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}.photo12{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo12{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}.photo13{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo13{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}.photo14{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo14{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}.photo15{
+    height: 100%;
+    width: 100%;
+    background-image: url(diet.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+   border-radius: 8px; 
+   transition: 1s;
+}
+.card1:hover .photo15{
+    transform: scale(0.5,0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+</section>
+
+<!-- features section ends -->
+
+<!-- pricing section starts  -->
+<!--first flash card-->
+<section class="pricing" id="pricing">
+  
+
+    
+
+     <!--end 1 flash card-->
+     <!--second flash card-->
+     <div class="plan">
+        <div class="flash-card">
+            <div class="front1">
+                
+            </div>
+            <div class="back1">
+                <span>DIET</span>
+                <h3>MEDITERRANEAN DIET</h3>
+                
+                <p> <i class="fas fa-check"></i> 7AM Greek yogurt with fresh berries,honey,alomonds</p>
+                <p> <i class="fas fa-check"></i> 8.30AM A handful of mixed nuts. </p>
+                <p> <i class="fas fa-check"></i> 11.30AM An apple. </p>
+                <p> <i class="fas fa-check"></i> 1.00PM Mixed greens, cherry tomatoes, cucumbers, red onions, Kalamata olives, and feta cheese. </p>
+                <p> <i class="fas fa-check"></i> 4.00PM Hummus with carrot and  grapes. </p>
+                <p> <i class="fas fa-check"></i> 6.00PM  yogurt with a drizzle of honey (259) </p>
+                <p> <i class="fas fa-check"></i> 8.00PM  few slices of melon.</p>
+                <p> <i class="fas fa-check"></i> 9.00PM PANNER MIXED PARATHA</p>
+                <a href="https://www.medicalnewstoday.com/articles/324221#7-day-meal-plan" class="btn">Read More</a>
+            </div>
+        </div>
+    
+          
+          <style>
+          .flash-card {
+            width: 300px;
+            height: 650px;
+            perspective: 1000px;
+          }
+          
+          .front1,
+          .back1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            backface-visibility: hidden;
+          }
+          
+          .front1 {
+            background: #111;
+            transform: rotateY(0);
+            background: url(MEDITARRIAN\ DIET.jpg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 60px 40px;
+        
+          }
+          
+          .back1{
+            background-color: #111;
+            transform: rotateY(180deg);
+          }
+          
+          .flash-card:hover .front1 {
+            transform: rotateY(-180deg);
+          }
+          
+          .flash-card:hover .back1 {
+            transform: rotateY(0);
+          }
+          .pricing .plan p {
+           line-height: 2;
+             padding: 1rem 0;
+               font-size: 1.4rem;
+            color: #aaa;
+           
+             }
+            
+
+      .pricing .plan p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+     
+          </style>
+
+        
+        
+     </div>
+
+  <!--end 2 flash card-->
+
+
+    
+    
+
+<!--end 3rd flash card-->
+
+<!--4 th flash card-->
+<div class="plan1">
+    <div class="flash-card">
+        <div class="front2">
+            
+        </div>
+        <div class="back2">
+            <span>DIET</span>
+            <h3>RAW FOOD DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM Scrambled eggs cooked in coconut oil or butter.</p>
+                <p> <i class="fas fa-check"></i> 8.30AM A handful of mixed nuts. </p>
+                <p> <i class="fas fa-check"></i> 11.30AM Sliced vegetables</p>
+                <p> <i class="fas fa-check"></i> 1.00PM raw vegetable salad with mixed greens,cherry tomatoes,carrots,cucumbers,sprouts. </p>
+                <p> <i class="fas fa-check"></i> 4.00PM  dates, nuts,coconut </p>
+                <p> <i class="fas fa-check"></i> 6.00PM  Raw almond milk or coconut milk with Cinnamon</p>
+                <p> <i class="fas fa-check"></i> 8.00PM  Raw cacao truffles made from dates </p>
+                <p> <i class="fas fa-check"></i> 9.00PM Raw cauliflower rice with diced vegetables</p>
+                <a href="https://www.everydayhealth.com/diet-nutrition/diet/raw-vegan-diet-benefits-risks-meal-plan-food-list/" class="btn">Read More</a>       
+            
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 650px;
+        perspective: 1000px;
+      }
+      
+      .front2,
+      .back2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front2 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(RAW\ FOOD\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back2{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front2 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back2 {
+        transform: rotateY(0);
+      }
+      .pricing .plan1 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan1 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan1 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+<!--end of 4th flash card-->
+<!--5th flash card-->
+<div class="plan3">
+    <div class="flash-card">
+        <div class="front4">
+            
+        </div>
+        <div class="back4">
+            <span>DIET</span>
+            <h3>KETOGENIC DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM Scrambled eggs cooked in coconut oil or butter.</p>
+                <p> <i class="fas fa-check"></i> 8.30AM A handful of mixed nuts. </p>
+                <p> <i class="fas fa-check"></i> 11.30AM Sliced vegetables</p>
+                <p> <i class="fas fa-check"></i> 1.00PM raw vegetable salad with mixed greens,cherry tomatoes,carrots,cucumbers,sprouts. </p>
+                <p> <i class="fas fa-check"></i> 4.00PM  dates, nuts,coconut </p>
+                <p> <i class="fas fa-check"></i> 6.00PM  Raw almond milk or coconut milk with Cinnamon</p>
+                <p> <i class="fas fa-check"></i> 8.00PM  Raw cacao truffles made from dates </p>
+                <p> <i class="fas fa-check"></i> 9.00PM Raw cauliflower rice with diced vegetables </p>
+
+
+            
+            <a href="https://www.everydayhealth.com/diet-nutrition/ketogenic-diet/comprehensive-ketogenic-diet-food-list-follow/" class="btn">Read More</a>
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 650px;
+        perspective: 1000px;
+      }
+      
+      .front4,
+      .back4{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front4 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(KETOGENIC\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back4{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front4 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back4 {
+        transform: rotateY(0);
+      }
+      .pricing .plan3 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan3 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan3 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+<!--end 5th flash card-->
+<!--6th flash card-->
+<div class="plan5">
+    <div class="flash-card">
+        <div class="front5">
+            
+        </div>
+        <div class="back5">
+            <span>DIET</span>
+            <h3>CHILDREN'S DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM MILK</p>
+                <p> <i class="fas fa-check"></i> 8.30AM Whole grain cereal with milk, bananas or berries. </p>
+                <p> <i class="fas fa-check"></i> 11.30AM small glass fruit juice or a fruit</p>
+                <p> <i class="fas fa-check"></i> 1.00PM chicken sandwich with tomato,yogurt </p>
+                <p> <i class="fas fa-check"></i> 4.00PM  Apple or  grapes. </p>
+                <p> <i class="fas fa-check"></i> 6.00PM  A small bowl of mixed berries </p>
+                <p> <i class="fas fa-check"></i> 8.00PM  A mixed green salad. </p>
+                <p> <i class="fas fa-check"></i> 9.00PM Baby carrots with hummus</p>
+            <a href="https://www.family.abbott/in-en/pediasure/healthy-eating-tips/weekly-meal-plans.html" class="btn">Read More</a>
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 650px;
+        perspective: 1000px;
+      }
+      
+      .front5,
+      .back5{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front5 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(CHILDRENS\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back5{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front5 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back5 {
+        transform: rotateY(0);
+      }
+      .pricing .plan5 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan5 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan5 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+<!--end 6th flash card-->
+<!--7th flash card-->
+<div class="plan7">
+    <div class="flash-card">
+        <div class="front7">
+            
+        </div>
+        <div class="back7">
+            <span>DIET</span>
+            <h3>DIABETIC DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM Greek yogurt with almonds and ground flaxseeds.</p>
+                <p> <i class="fas fa-check"></i> 8.30AM A handful of mixed nuts.</p>
+                <p> <i class="fas fa-check"></i> 11.30AM A cup of green tea or black coffee.</p>
+                <p> <i class="fas fa-check"></i> 1.00PM Grilled chicken or brown rice,broccoli.</p>
+                <p> <i class="fas fa-check"></i> 4.00PM  apple or a few strawberries.</p>
+                <p> <i class="fas fa-check"></i> 6.00PM  yogurt  with a sprinkle of ground cinnamon.</p>
+                <p> <i class="fas fa-check"></i> 8.00PM  Roasted sweet potatoes or cauliflower rice,salad </p>
+                <a href="https://www.cdc.gov/diabetes/managing/eat-well/meal-plan-method.html" class="btn">Read More</a>
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 650px;
+        perspective: 1000px;
+      }
+      
+      .front7,
+      .back7{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front7 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(DIABETIC\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back7{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front7 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back7 {
+        transform: rotateY(0);
+      }
+      .pricing .plan7 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan7 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan7 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+<!--end 7th card-->
+
+<!--8th flash card-->
+<div class="plan8">
+    <div class="flash-card">
+        <div class="front8">
+            
+        </div>
+        <div class="back8">
+            <span>DIET</span>
+            <h3>LOW CARB DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM Scrambled eggs cooked in coconut oil or butter.</p>
+                <p> <i class="fas fa-check"></i> 8.30AM  A handful of mixed nuts. </p>
+                <p> <i class="fas fa-check"></i> 11.30AM Sliced vegetables</p>
+                <p> <i class="fas fa-check"></i> 1.00PM  vegetable salad with greens,tomatoes,carrots,cucumbers,sprouts. </p>
+                <p> <i class="fas fa-check"></i> 4.00PM  dates, nuts,coconut </p>
+                <p> <i class="fas fa-check"></i> 6.00PM  Raw almond milk or coconut milk with Cinnamon</p>
+                <p> <i class="fas fa-check"></i> 8.00PM  cacao truffles made from dates </p>
+                <p> <i class="fas fa-check"></i> 9.00PM  cauliflower rice with diced vegetables     </p>        
+            <a href="https://www.healthline.com/nutrition/low-carb-diet-meal-plan-and-menu#foods-to-eat" class="btn">Read More</a>
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 750px;
+        perspective: 1000px;
+      }
+      
+      .front8,
+      .back8{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front8 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(LOW\ CARB\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back8{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front8 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back8 {
+        transform: rotateY(0);
+      }
+      .pricing .plan8 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan8 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan8 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+<!--end 8th flash card-->
+<!--9th flash card-->
+<div class="plan9">
+    <div class="flash-card">
+        <div class="front9">
+            
+        </div>
+        <div class="back9">
+            <span>DIET</span>
+            <h3>PALEO DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM Vegetable omelette made with  eggs, spinach, peppers, and mushrooms.</p>
+                <p> <i class="fas fa-check"></i> 8.30AM A side of berries. </p>
+                <p> <i class="fas fa-check"></i> 11.30AM Almonds or mixed nuts.</p>
+                <p> <i class="fas fa-check"></i> 1.00PM Grilled chicken with sweet potatoes, broccoli.</p>
+                <p> <i class="fas fa-check"></i> 4.00PM  Sliced cucumbers . </p>
+                <p> <i class="fas fa-check"></i> 6.00PM  Avocado salad with greens, tomatoes, and olive oil.</p>
+                <p> <i class="fas fa-check"></i> 8.00PM  Baked salmon with lemon and herbs, sprouts and cauliflower rice.</p>
+                <p> <i class="fas fa-check"></i> 9.00PM Mixed green salad with olive oil and vinegar. </p>
+                <a href="https://www.eatingwell.com/article/290086/7-day-paleo-meal-plan/" class="btn">Read More</a>
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 1000px;
+        perspective: 1000px;
+      }
+      
+      .front9,
+      .back9{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front9 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(PALEO\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back9{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front9 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back9 {
+        transform: rotateY(0);
+      }
+      .pricing .plan9 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan9 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan9 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+
+<!--end 9th flash card-->
+
+<!--10th flash card-->
+<div class="plan10">
+    <div class="flash-card">
+        <div class="front10">
+            
+        </div>
+        <div class="back10">
+            <span>DIET</span>
+            <h3>WEIGHT LOSS DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM WATER Cinnamon and lemon(1 GLASS)</p>
+                <p> <i class="fas fa-check"></i> 8.30AM OATS PORRIDGE IN MILK (1 BOWL) </p>
+                <p> <i class="fas fa-check"></i> 11.30AM GREEN TEA + PAPAYA (1006 CAL) </p>
+                <p> <i class="fas fa-check"></i> 1.00PM SALAD TO MULTI GRAIN ROTI GOBHI HATTAR+BHAJI+DAL  </p>
+                <p> <i class="fas fa-check"></i> 4.00PM MAX PROTEIN CHIPS-60G </p>
+                <p> <i class="fas fa-check"></i> 6.00PM GREEN TEA NUTS (259) </p>
+                <p> <i class="fas fa-check"></i> 8.00PM MIXED VEG SALAD</p>
+                <p> <i class="fas fa-check"></i> 9.00PM PANNER MIXED VEG (1 BOWL) PARATHA ONLY</p>
+                
+                <a href="https://www.bajajfinservhealth.in/articles/healthy-diet-plan-for-maintaining-good-health"class="btn">READ MORE</a>
+            </div>
+            
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 1000px;
+        perspective: 1000px;
+      }
+      
+      .front10,
+      .back10{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front10 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(WEIGHTLOSS\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back10{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front10 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back10 {
+        transform: rotateY(0);
+      }
+      .pricing .plan10 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan10 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan10 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+<!--end 10th flash card-->
+<!--11th flash card-->
+<div class="plan11">
+    <div class="flash-card">
+        <div class="front11">
+            
+        </div>
+        <div class="back11">
+            <span>DIET</span>
+            <h3>PREGNANCY DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM Whole grain toast with avocado slices and a side of scrambled eggs.</p>
+                <p> <i class="fas fa-check"></i> 8.30AM Bowl of fresh fruit salad</p>
+                <p> <i class="fas fa-check"></i> 11.30AM A cup of herbal tea.</p>
+                <p> <i class="fas fa-check"></i> 1.00PM Grilled chicken with brown rice. </p>
+                <p> <i class="fas fa-check"></i> 4.00PM  Carrot sticks with almond butter,NUTS </p>
+                <p> <i class="fas fa-check"></i> 6.00PM A glass of milk. </p>
+                <p> <i class="fas fa-check"></i> 8.00PM Baked salmon with lemon juice</p>
+                <p> <i class="fas fa-check"></i> 9.00PM A small bowl of mixed berries. </p>
+                <a href="https://www.pregnancybirthbaby.org.au/healthy-diet-during-pregnancy" class="btn">Read More</a>
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 650px;
+        perspective: 1000px;
+      }
+      
+      .front11,
+      .back11{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front11 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(PREGNANCY\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back11{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front11 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back11 {
+        transform: rotateY(0);
+      } 
+      .pricing .plan11 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan11 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan11 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+<!--end 11th flash card-->
+<!--start 12th flash card-->
+<div class="plan12">
+    <div class="flash-card">
+        <div class="front12">
+            
+        </div>
+        <div class="back12">
+            <span>DIET</span>
+            <h3>HIGH PROTIEN DIET</h3>
+            <p> <i class="fas fa-check"></i> 7AM Scrambled eggs with spinach and diced tomatoes.</p>
+                <p> <i class="fas fa-check"></i> 8.30AM A cup of black coffee</p>
+                <p> <i class="fas fa-check"></i> 11.30AM Protein shake made with  protein powder, almond milk.</p>
+                <p> <i class="fas fa-check"></i> 1.00PM Grilled chicken  with  brown rice. </p>
+                <p> <i class="fas fa-check"></i> 4.00PM  A handful of almonds or a protein bar. </p>
+                <p> <i class="fas fa-check"></i> 6.00PM  Cottage cheese with sliced cucumber and carrot sticks</p>
+                <p> <i class="fas fa-check"></i> 8.00PM  Grilled salmon with herbs and sweet potatoes  </p>
+                <p> <i class="fas fa-check"></i> 9.00PM   small mixed green salad with a vinaigrette dressing</p>
+                <a href="https://www.eatingwell.com/article/2053490/high-protein-flat-belly-diet-meal-plan/" class="btn">Read More</a>
+        </div>
+    </div>
+
+      
+      <style>
+      .flash-card {
+        width: 300px;
+        height: 650px;
+        perspective: 1000px;
+      }
+      
+      .front12,
+      .back12{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+      }
+      
+      .front12 {
+        background: #111;
+        transform: rotateY(0);
+        background: url(HIGH\ PROTIEN\ DIET.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    
+      }
+      
+      .back12{
+        background-color: #111;
+        transform: rotateY(180deg);
+      }
+      
+      .flash-card:hover .front12 {
+        transform: rotateY(-180deg);
+      }
+      
+      .flash-card:hover .back12 {
+        transform: rotateY(0);
+      }
+      .pricing .plan12 p i {
+     padding-right: 1rem;
+     color: #f00;
+     }
+
+     .pricing .plan12 {
+     text-align: left;
+      padding: 1rem;
+     }
+     .pricing .plan12 span{
+      font-size: 2rem;
+      color: #f00;
+
+     }
+      </style>
+
+    
+    
+</div>
+<!--end 12th flash card-->
+
+
+ </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- trainers section starts  -->
+
+<section class="BMI Calculator" id="BMI Calculator">
+  <h1 class="heading"> <span>BMI Calculator</span> </h1>
+  <div class="containeer">
+    <div class="box2">
+        <h1>BMI Calculator</h1>
+        <div class="content">
+            <div class="input">
+                <label for="height">Age</label>
+                <input type="text" class="text-input" id="age" autocomplete="off" required/>
+
+            </div>
+            <div class="gender">
+                <label class="container">
+                <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio" id="f"><p class="text">Female</p>
+                <span class="checkmark"></span>
+            </label>
+            
+            
+            </div>
+            <div class="containerHW">
+                <div class="inputH">
+                    <label for="height">Height(cm)</label>
+                    <input type="number" id="height" required>
+                </div>
+                <div class="inputW">
+                    
+                        <label for="weight">Weight(kg)</label>
+                        <input type="number" id="weight" required>
+                    </div>
+            </div>
+            <button class="calculate" id="submit" onclick="calculate2();">Calculate BMI</button>
+        </div>
+        <div class="result3">
+            <p>Your BMI is</p>
+            <div id="result3">00.00</div>
+            <p class="comment"></p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText"></p>
+    </div>
+</div>
+
+<script>
+  var age = document.getElementById("age");
+var height = document.getElementById("height");
+var weight = document.getElementById("weight");
+var male = document.getElementById("m");
+var female = document.getElementById("f");
+var form = document.getElementById("form");
+let resultArea = document.querySelector(".comment");
+
+modalContent =  document.querySelector(".modal-content");
+modalText =  document.querySelector("#modalText");
+var modal = document.querySelector("myModal");
+var span =  document.getElementsByClassName("close")[0];
+function calculate2(){
+    if(age.value==''|| height.value=='' || weight.value=='' || (male.checked==false && female.checked==false))
+    {
+        modal.style.display="block";
+        modalText.innerHTML='All fields are required!';
+
+    }
+    else{
+        countBmi();
+    }
+}
+function countBmi()
+{
+    var p =[age.value, height.value, weight.value];
+    if(male.checked){
+        p.push("male");
+
+    }
+    else if(female.checked)
+    {
+        p.push("female");
+    }
+    var bmi = Number(p[2])/(Number(p[1])/100*Number(p[1])/100);
+
+    var result3 = '';
+    if(bmi<18.5)
+    {
+        result3 = 'Underweight';
+    }
+    else if(18.5<=bmi && bmi<=24.9)
+    {
+        result3 = 'Healthy';
+    }
+    else if(25<=bmi && bmi<=29.9)
+    {
+        result3 = 'Overweight';
+    }
+    else if(30<=bmi && bmi<=34.9)
+    {
+        result3 = 'Obese';
+    }
+    else if(35<=bmi)
+    {
+        result3 = 'Extremely obese';
+    }
+    resultArea.style.display = "block";
+    document.querySelector(".comment").innerHTML =`You are <span id="comment">${result3}</span>`;
+    document.querySelector("#result3").innerHTML = bmi.toFixed(2);
+
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if(event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+    
+</section>
+
+<!-- trainers section ends -->
+
+<!-- banner section starts  -->
+
+
+
+
+
+<section class="calorie" id="calorie"> 
+  <h1 class="heading"> <span>Calories Burned Calculator</span> </h1>
+  <div class="calculator">
+    
+      <label for="weight1">Weight (in kgs):
+      <input type="number" id="weight1" min="1" required>
+  </label>
+  
+      <label for="height1">Height (in inches):
+      <input type="number" id="height1" min="1" required>
+  </label>
+  
+      <label for="duration1">Exercise Duration (in minutes):
+      <input type="number" id="duration1" min="1" required>
+  </label>
+  
+      <label for="activity">Activity:
+      <select id="activity">
+        <option value="walking">Walking</option>
+        <option value="running">Running</option>
+        <option value="cycling">Cycling</option>
+        <option value="aerobics">Aerobics</option>
+        <option value="zumba">Zumba</option>
+        <option value="dance">Dance</option>
+        <option value="jogging">Jogging</option>
+        <option value="swimming">Swimming</option>
+        <option value="bicycling">Bicycling</option>
+        <option value="Others">Others</option>
+      </select>
+  </label>
+  
+      <button type="button" onclick="calculateCalories()">Calculate</button>
+    </div>
+  
+    <div class="result1" id="result1"></div>
+  
+    <script>
+      function calculateCalories() {
+        var activity = document.getElementById("activity").value;
+        var duration1 = parseInt(document.getElementById("duration1").value);
+        var weight1 = parseInt(document.getElementById("weight1").value);
+        var height1 = parseInt(document.getElementById("height1").value);
+  
+        var caloriesBurned = 0;
+  
+        // Calorie calculation per minute for different activities
+        switch (activity) {
+          case "walking":
+            caloriesBurned = (0.035 * weight1) + ((height1 * 0.0254) * 0.029) * duration1;
+            break;
+          case "running":
+            caloriesBurned = (0.08 * weight1) + ((height1 * 0.0254) * 0.063) * duration1;
+            break;
+          case "cycling":
+            caloriesBurned = (0.06 * weight1) + ((height1 * 0.0254) * 0.045) * duration1;
+            break;
+          case "aerobics":
+            caloriesBurned = (0.055 * weight1) + ((height1 * 0.0254) * 0.042) * duration1;
+            break;
+          case "zumba":
+            caloriesBurned = (0.06 * weight1) + ((height1 * 0.0254) * 0.05) * duration1;
+            break;
+          case "dance":
+            caloriesBurned = (0.04 * weight1) + ((height1 * 0.0254) * 0.035) * duration1;
+            break;
+          case "jogging":
+            caloriesBurned = (0.07 * weight1) + ((height1 * 0.0254) * 0.055) * duration1;
+            break;
+          case "swimming":
+            caloriesBurned = (0.06 * weight1) + ((height1 * 0.0254) * 0.045) * duration1;
+            break;
+          case "bicycling":
+            caloriesBurned = (0.05 * weight1) + ((height1 * 0.0254) * 0.04) * duration1;
+            break;
+            case "Others":
+            caloriesBurned = (0.05 * weight1) + ((height1 * 0.0254) * 0.04) * duration1;
+            break;
+          // Add more cases for other activities as needed
+        }
+  
+        var resultDiv = document.getElementById("result1");
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = "Estimated calories burned: " + caloriesBurned.toFixed(2) + " calories";
+      }
+    </script>
+   </section>
+  
+
+
+
+<!-- banner section ends -->
+
+<!-- review section starts  -->
+<section class="schedule section" id="schedule">
+  <h1 class="heading"> <span>WEEKLY SCHEDULE</span> </h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-12 text-center">
+        <h6 data-aos="fade-up">our weekly GYM schedules</h6>
+
+        <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">
+          Workout Timetable
+        </h2>
+      </div>
+
+      <div class="col-lg-12 py-5 col-md-12 col-12">
+        <table
+          class="table table-bordered table-responsive schedule-table"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <thead class="thead-light">
+            <th><i class="fa fa-calendar"></i></th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><small>7:00 am</small></td>
+              <td>
+                <strong>CARDIO</strong>
+                <span>7:00 am - 9:00 am</span>
+              </td>
+              <td>
+                <strong>YOGA</strong>
+                <span>7:00 am - 9:00 am</span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <strong>YOGA</strong>
+                <span>7:00 am - 9:00 am</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td><small>9:00 am</small></td>
+              <td></td>
+              <td></td>
+              <td>
+                <strong>DANCE</strong>
+                <span>8:00 am - 9:00 am</span>
+              </td>
+              <td>
+                <strong>STRETCHING</strong>
+                <span>8:00 am - 9:00 am</span>
+              </td>
+              <td></td>
+              <td>
+                <strong>CARDIO</strong>
+                <span>8:00 am - 9:00 am</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td><small>11:00 am</small></td>
+              <td></td>
+              <td>
+                <strong>ZUMBA</strong>
+                <span>11:00 am - 2:00 pm</span>
+              </td>
+              <td>
+                <strong>AREOBICS</strong>
+                <span>11:30 am - 3:30 pm</span>
+              </td>
+              <td></td>
+              <td>
+                <strong>FULL BODY WORK</strong>
+                <span>11:50 am - 1:20 pm</span>
+              </td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><small>2:00 pm</small></td>
+              <td>
+                <strong>FAT BURNING</strong>
+                <span>2:00 pm - 4:00 pm</span>
+              </td>
+              <td>
+                <strong>POWER LIFTING</strong>
+                <span>3:00 pm - 6:00 pm</span>
+              </td>
+              <td></td>
+              <td>
+                <strong>CARDIO</strong>
+                <span>6:00 pm - 9:00 pm</span>
+              </td>
+              <td></td>
+              <td>
+                <strong>ZUMBA</strong>
+                <span>5:00 pm - 7:00 pm</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<style>
+.schedule {
+  background: var(--dark-color);
+}
+
+.schedule-table {
+  display: table;
+  border: 0;
+  text-align: center;
+}
+
+.schedule-table strong,
+.schedule-table span {
+  display: block;
+  text-align: center;
+}
+
+.schedule-table strong {
+  color: var(--white-color); /* Set the heading color to white */
+}
+
+.schedule-table span {
+  color: red; /* Adjust the font color here */
+}
+
+.schedule-table span,
+.schedule-table small {
+  font-size: 14px; /* Adjust the font size here */
+  text-transform: uppercase;
+}
+
+.schedule-table small {
+  position: relative;
+  top: 10px;
+}
+
+.table .thead-light th,
+.schedule-table tr td:first-child {
+  background: var(--primary-color);
+  border: 1px solid #f00;
+  color: var(--white-color);
+  
+}
+.schedule-table tr {
+  background-color: black; 
+  color: #fff;
+}
+.schedule-table .thead-light th {
+  border-bottom: 0;
+  text-transform: uppercase;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #f00;
+}
+
+.table-bordered td {
+  padding-bottom: 22px;
+}
+
+.table td,
+.table th {
+  padding: 1rem;
+  color: var(--white-color);
+}
+
+</style>
+
+
+
+<!-- review section ends -->
+<!--Motivation starts-->
+<section class="review">
+  <h1 class="heading"> <span>MOTIVATION</span> </h1>
+    <div class="information">
+        
+    </div>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <p>Exercise is my best therapy, it keeps me mentally and physically strong.</p>
+                <div class="user">
+                    <img src="allu-arjun-.jpg" alt="">
+                    <div class="info">
+                        <h3>Allu Arjun</h3>
+                        <span>Actor</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Fitness is the key to a long and healthy life. Make it a priority.Train like a champion, perform like a champion</p>
+                <div class="user">
+                    <img src="sam.jpg" alt="">
+                    <div class="info">
+                        <h3>Samantha</h3>
+                        <span>Actress</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Never underestimate the power of fitness. It can transform your game.Fitness is not a destination; it is a way of life.</p>
+                <div class="user">
+                    <img src="ms.jpg" alt="">
+                    <div class="info">
+                        <h3>MS Dhoni</h3>
+                        <span>Cricketer</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Stay dedicated, stay disciplined, and your fitness goals will become a reality </p>
+                <div class="user">
+                    <img src="rd.jpg" alt="">
+                    <div class="info">
+                        <h3>Rana Daggubati</h3>
+                        <span>Actor</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+              <p>Fitness is not about being skinny; it's about being healthy and confident in your own skin.</p>
+              <div class="user">
+                  <img src="anu.jpg" alt="">
+                  <div class="info">
+                      <h3>Anushka Sharma</h3>
+                      <span>Actress</span>
+                  </div>
+                  <i class="fas fa-quote-left"></i>
+              </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>Invest in your health. It will be your best investment.Your body is a reflection of your lifestyle</p>
+            <div class="user">
+                <img src="kk.jpg" alt="">
+                <div class="info">
+                    <h3>Kareena Kapoor Khan</h3>
+                    <span>Actress</span>
+                </div>
+                <i class="fas fa-quote-left"></i>
+            </div>
+        </div>
+        <div class="swiper-slide slide">
+          <p>Fitness is not just about hitting the gym; it's about an inner happiness and an overall well-being.</p>
+          <div class="user">
+              <img src="ss.jpg" alt="">
+              <div class="info">
+                  <h3>Sonu Sood</h3>
+                  <span>Actor</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+          </div>
+      </div>
+      <div class="swiper-slide slide">
+        <p>Fitness is not just a temporary phase, it's a lifelong commitment to taking care of your body and mind.</p>
+        <div class="user">
+            <img src="aa.jpg" alt="">
+            <div class="info">
+                <h3>Alia Bhatt</h3>
+                <span>Actress</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+        </div>
+    </div>
+    <div class="swiper-slide slide">
+      <p>You can't control how your body looks, but you can control how strong and fit you feel.</p>
+      <div class="user">
+          <img src="dp.jpg" alt="">
+          <div class="info">
+              <h3>Deepika Padukone</h3>
+              <span>Actress</span>
+          </div>
+          <i class="fas fa-quote-left"></i>
+      </div>
+  </div>
+  <div class="swiper-slide slide">
+    <p>Exercise is king, nutrition is queen, put them together and you've got a kingdom</p>
+    <div class="user">
+        <img src="shilpa.jpg" alt="">
+        <div class="info">
+            <h3>Shilpa Shetty</h3>
+            <span>Actress</span>
+        </div>
+        <i class="fas fa-quote-left"></i>
+    </div>
+</div>
+<div class="swiper-slide slide">
+  <p>I believe in a balanced lifestyle that includes regular exercise and mindful eating.</p>
+  <div class="user">
+      <img src="rr.jpg" alt="">
+      <div class="info">
+          <h3>Ram Charan</h3>
+          <span>Actor</span>
+      </div>
+      <i class="fas fa-quote-left"></i>
+  </div>
+</div>
+<div class="swiper-slide slide">
+  <p>Fitness is not a trend, it's a lifelong commitment to your well-being.</p>
+  <div class="user">
+      <img src="nn.jpg" alt="">
+      <div class="info">
+          <h3>Naga Chaitanya</h3>
+          <span>Actor</span>
+      </div>
+      <i class="fas fa-quote-left"></i>
+  </div>
+</div>
+<div class="swiper-slide slide">
+  <p>Fitness is not just a temporary phase, it's a lifelong commitment to taking care of your body and mind.</p>
+  <div class="user">
+      <img src="vv.jpg" alt="">
+      <div class="info">
+          <h3>Virat Kohli</h3>
+          <span>Cricketer</span>
+      </div>
+      <i class="fas fa-quote-left"></i>
+  </div>
+</div>
+<div class="swiper-slide slide">
+  <p>Fitness is a lifestyle for me. It keeps me focused, energized, and ready to take on any challenge that comes my way.</p>
+  <div class="user">
+      <img src="praba.jpg" alt="">
+      <div class="info">
+          <h3>Prabhas</h3>
+          <span>Actor</span>
+      </div>
+      <i class="fas fa-quote-left"></i>
+  </div>
+</div>
+
+<div class="swiper-slide slide">
+  <p>I prioritize self-care and make time for my fitness routine. It's a way for me to recharge and take care of my overall well-being.</p>
+  <div class="user">
+      <img src="pc.jpg" alt="">
+      <div class="info">
+          <h3>Priyanka Chopra</h3>
+          <span>Actress</span>
+      </div>
+      <i class="fas fa-quote-left"></i>
+  </div>
+</div>
+
+
+
+        </div>
+
+    </div>
+
+</section>
+<!--motivation ends-->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>daily posts</span> </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">by Sahithi</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
+                    <h3>My Relationship with fitness</h3>
+                    <p>I don’t look forward to strength training on my own the same way that I used to, so I haven’t been lifting consistently on my own for quite a few months.</p>
+                    <a href="https://fitnessista.com/my-relationship-with-fitness-lately/" class="btn">read more</a>
+                </div>
+            </div>
+            
+            <div 
+            class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">by Bhanu</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
+                    <h3>we celebrate what our bodies can do </h3>
+                    <p>what they can achieve Whether that’s with a marathon a month in your front room after a day at your desk.No matter where you are in your fitness journey</p>
+                    <a href="https://www.bornfitness.com/blog/" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">by Manasa</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
+                    <h3>You don't need more confusing information</h3>
+                    <p> We've been the trusted voice in fitness and nutrition for nearly 15 years.  Our job is making it easier for you to take your fitness and nutrition </p>
+                    <a href="https://www.advancedhumanperformance.com/" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">by Neha</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
+                    <h3>Proper lifting technique and body mechanics are essentiaL</h3>
+                    <p>For long-term joint health, performance, and physique improvements. With that said, here are 20 tell-tale indications </p>
+                    <a href="https://lindywell.com/blog/" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">by Jyothsna</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
+                    <h3>Motivation vs. Consistency: Which One Helps You Build Lifelong Habits?</h3>
+                    <p>In the battle of motivation vs. consistency, which one wins? While both can be key components </p>
+                    <a href="https://lindywell.com/blog/" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="links" href="#home">home</a>
+            <a class="links" href="#about">about</a>
+            <a class="links" href="#question">Questionnaire</a>
+            <a class="links" href="#features">features</a>
+            <a class="links" href="#pricing">Diet</a>
+            <a class="links" href="#BMI Calculator">BMI Calculator</a>
+            <a class="links" href="#calorie">Calorie burned Calculator</a>
+            <a class="links" href="#blogs">blogs</a>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> <i class="fas fa-phone"></i> +91 9367487383 </p>
+            <p> <i class="fas fa-phone"></i> +91 6778975788 </p>
+            <p> <i class="fas fa-envelope"></i> getfitindia@gmail.com </p>
+            <p> <i class="fas fa-map"></i> Hyderabad, india - 400104 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+            
+        </div>
+<div class="box8">
+  <h3>Message me</h3>
+  <form action="https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ffgf=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=Af_xneGuTfYavq9U88V9dbYYZImUYKjgg_3Ok9o_0E0RJtt9iUj1o1l5h_tWa-D34YYvgXVsw9il&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+    <div>
+    <input style="font-size: LARGE;" type="email" name="" class="email" placeholder="enter your email" id=""></div>
+    <input type="submit" value="MESSAGE NOW" class="btn">
+  </form>
+</div>
+       
+
+</section>
+
+<div class="credit"> <span></span>  all rights reserved! </div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
