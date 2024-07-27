@@ -1,27 +1,68 @@
-function myfunction(){
+let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .navbar');
 
-var email = document.forms['form']['email'];
-var Password = document.forms['form']['Password'];
-}
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+};
 
-function func(){
-    var email = document.getElementById("email").value;
-    var Password = document.getElementById('password').value;
-    if(email.value.length >= 8)
-    {
-        email.style.border = "1px solid red";
-        email_error.style.display = "block";
-        email.focus();
-        window.location.assign("bmiindex.html")       
-        alert("Login Succesfull");
-       
-    }
-   else
-    {
-        Password.style.border = "1px solid red";
-        Pass_error.style.display = "block";
-        Password.focus();
-        alert("Login Failed");
-        return;
-    }
-}
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+};
+
+
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 20,
+    effect: "fade",
+    grabCursor: true,
+    loop:true,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    grabCursor: true,
+    loop:true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+        },
+        600:{
+            slidesPerView:2,
+        },
+    },
+});
+
+var swiper = new Swiper(".blogs-slider", {
+    spaceBetween: 20,
+    grabCursor: true,
+    loop:true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+    },
+});
