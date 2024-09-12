@@ -3,7 +3,7 @@
 GET-FIT is a responsive fitness website designed to help users improve their health by learning exercises, accessing personalized diet plans, calculating BMI, and staying motivated. This project is built using HTML, CSS, and JavaScript to provide an interactive and user-friendly experience.
 
 # FEATURES
-# HOME PAGE
+### HOME PAGE
 Introduces the website and provides quick access to all features.
 
 # PERSONAL QUESTIONNAIRE
